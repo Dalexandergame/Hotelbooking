@@ -1,0 +1,135 @@
+:root {
+	--primary: #ddd;
+	--dark: #333;
+	--light: #fff;
+	--shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+};
+
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
+}
+
+img {
+    max-width: 100%;
+}
+
+/* mini nav */
+.mini-nav {
+    overflow: auto;
+    background-color: var(--dark);
+    color: antiquewhite;
+    padding: 10px;
+}
+
+.mini-nav p {
+    float: right;
+}
+
+/* Reserve */
+
+.Reserve {
+    background-color: var(--dark);
+}
+.Reserve p {
+    float: right;
+    padding: 5px;
+}
+
+/* Main nav */
+.main-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.main-nav a {
+	background :var(--primary);
+	color: var(--dark);
+	text-transform: uppercase;
+	
+}
+
+.main-nav a:hover {
+	background : var(--dark);
+	color: var(--light);
+}
+
+.main-nav li {
+    float: right;
+}
+
+.main-nav li a {
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;    
+}
+
+/* Our Rooms */
+.our-rooms {
+    display: grid;
+    grid-gap: 20px;
+    padding: 5px;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+}
+
+.our-rooms img{
+    display: inline-block;
+    width: 500px;
+    height: 200px;
+    box-shadow: var(--shadow);
+}
+
+/* Facilities */
+.facilties {
+    display: grid;
+    grid-template-rows: 50%;
+
+}
+
+/* Contact */
+.contact {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+}
+
+.message-area {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row-gap: 10px;
+}
+
+/* Footer */
+footer {
+	margin-top: 2rem;
+	background: var(--dark);
+	color: var(--light);
+	text-align: right;
+	padding: 1rem;
+}
+
+/* Show Case */
+.showcase {
+	grid-area: showcase;
+	min-height: 400px;
+	background-image: url(myHtmlImgs/hotel-palace-main.jpg);
+	background-size: cover;
+	background-position: center;
+	padding: 3rem;
+}
+
+.showcase h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+    color: solid black);
+}
+
+.showcase p {
+	font-size: 1.3rem;
+	margin-top: 0;
+	color: solid black;
+}
